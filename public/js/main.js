@@ -78,7 +78,7 @@ gsap.utils.toArray(".card").forEach(card => {
 });
 
 
-emailjs.init("65AGTLsMz8DhAi7QoPpAt");
+emailjs.init("T9Q30T5-_XWRDmiTY");
 
 document
 .getElementById("contact-form")
