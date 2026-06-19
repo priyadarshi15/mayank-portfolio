@@ -76,3 +76,43 @@ gsap.utils.toArray(".card").forEach(card => {
     });
 
 });
+
+
+emailjs.init("65AGTLsMz8DhAi7QoPpAt");
+
+document
+.getElementById("contact-form")
+.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    emailjs.send(
+        "service_8r7z8a4",
+        "template_5tkxuwh",
+        {
+            name:
+            document.getElementById("name").value,
+
+            email:
+            document.getElementById("email").value,
+
+            message:
+            document.getElementById("message").value
+        }
+    )
+    .then(() => {
+
+        alert("Message sent successfully!");
+
+        this.reset();
+
+    })
+    .catch((error) => {
+
+        alert("Failed to send message.");
+
+        console.error(error);
+
+    });
+
+});

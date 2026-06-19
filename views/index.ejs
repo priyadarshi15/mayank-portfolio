@@ -10,6 +10,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
 </head>
 
 <body>
@@ -339,29 +340,43 @@
 
         <!-- Right Side -->
 
-        <form class="contact-form">
+        <form id="contact-form" class="contact-form">
 
-            <label>YOUR NAME</label>
-            <input type="text" placeholder="Enter your full name">
+    <label>YOUR NAME</label>
+    <input
+        id="name"
+        type="text"
+        placeholder="Enter your full name"
+        required
+    >
 
-            <label>YOUR EMAIL</label>
-            <input type="email" placeholder="Enter your email">
+    <label>YOUR EMAIL</label>
+    <input
+        id="email"
+        type="email"
+        placeholder="Enter your email"
+        required
+    >
 
-            <label>MESSAGE</label>
-            <textarea placeholder="Type your message"></textarea>
+    <label>MESSAGE</label>
+    <textarea
+        id="message"
+        placeholder="Type your message"
+        required
+    ></textarea>
 
-            <button type="submit">
-                SEND MESSAGE
-            </button>
+    <button type="submit">
+        SEND MESSAGE
+    </button>
 
-        </form>
+</form>
 
     </div>
 
 </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="/js/main.js"></script>
-
 </body>
 
 </html>
