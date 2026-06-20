@@ -1325,3 +1325,23 @@ section{
         font-size: 2.7rem;
     }
 }
+
+
+@media (max-width: 480px){
+
+    .navbar{
+        overflow-x: auto;
+        flex-wrap: nowrap;
+
+        scrollbar-width: none;
+    }
+
+    .navbar::-webkit-scrollbar{
+        display:none;
+    }
+}
+
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:120px;
+}
